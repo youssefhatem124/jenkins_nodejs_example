@@ -17,7 +17,7 @@ pipeline {
         }
         stage('Deploy') {
             steps {
-               sh 'docker  run -d -p 4000:3000 123123123123123456/jenkins_nodedev:v1.0'
+               sh 'docker run -d -p 4000:3000 123123123123123456/jenkins_nodedev:v1.0'
             }
         }
     }
